@@ -108,6 +108,15 @@ return packer.startup(function(use)
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
+  -- Flutter
+  use({
+    "akinsho/flutter-tools.nvim",
+    requires = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("config.flutter").setup()
+    end,
+  })
+
   if packer_bootstrap then
     require("packer").sync()
   end
