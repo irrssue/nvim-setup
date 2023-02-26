@@ -12,10 +12,10 @@ keymap.set("i", "jk", "<ESC>")
 keymap.set("n", "<leader>", "<i>")
 
 -- Moving the cursor
-keymap.set("n", "g", "j")
-keymap.set("n", "h", "k")
+-- keymap.set("n", "g", "j")
+-- keymap.set("n", "h", "k")
 keymap.set("n", "f", "h")
-keymap.set("n", "j", "l")
+-- keymap.set("n", "j", "l")
 -- clear search highlights
 keymap.set("n", "<leader>/", ":nohl<CR>")
 
